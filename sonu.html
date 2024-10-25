@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .gradient-bg {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40vh;
+            background: linear-gradient(to top, rgba(128, 0, 255, 0.3), transparent);
+            pointer-events: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .contact-btn {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .error-code {
+            font-size: 5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            color: #999;
+            margin-bottom: 4rem;
+        }
+
+        .cta-section {
+            margin-top: 8rem;
+            text-align: center;
+        }
+
+        .cta-heading {
+            font-size: 2.5rem;
+            color: #8A2BE2;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .cta-text {
+            color: #0a0909;
+            max-width: 400px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #8A2BE2;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        @media (min-width: 500px) {
+            nav {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .nav-links a:not(.contact-btn) {
+                display: none;
+            }
+
+            .error-code {
+                font-size: 3.5rem;
+            }
+
+            .cta-heading {
+                font-size: 2rem;
+                padding: 0 1rem;
+            }
+
+            .cta-text {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    <nav>
+        <a href="/" class="logo">Credennz</a>
+        <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Contact</a>
+            <a href="/contact-us" class="contact-btn">Contact Us</a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="error-code">404</div>
+        <div class="error-message">The page you're looking for has either been removed or is nonexistent.</div>
+    </div>
+
+    <div class="cta-section">
+        <h2 class="cta-heading">Take your business to<br>the next level.</h2>
+        <p class="cta-text">Get more insights and reports for your startup and improve the customer experiences.</p>
+        <a href="#" class="cta-button">Get Quote</a>
+    </div>
+</body>
+</html>

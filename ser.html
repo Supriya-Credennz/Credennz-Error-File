@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credennz - 404 Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .contact-us {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .error-code {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .cta {
+            background-color: #8a2be2;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .gradient {
+            height: 100px;
+            background: linear-gradient(to top, rgba(138, 43, 226, 0.5), transparent);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Credennz</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="contact-us">Contact us</button>
+        </header>
+        <main>
+            <div class="error-code">404</div>
+            <div class="error-message">The page you're looking for has either been removed or is nonexistent.</div>
+            <h1>Take your business to the next level.</h1>
+            <p>Get more insights and reports for your startup and improve the customer relationships.</p>
+            <button class="cta">Get Quote</button>
+        </main>
+        <div class="gradient"></div>
+    </div>
+</body>
+</html>
